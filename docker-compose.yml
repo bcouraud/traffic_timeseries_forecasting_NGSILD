@@ -1,0 +1,25 @@
+version: "3"
+services:
+    trafficforecastgreenmov:
+        container_name: trafficforecastgreenmov
+        build: .
+        expose:
+         - 8911
+         - 8000
+        command: uvicorn fastAPI:app --host 0.0.0.0
+        volumes:
+         - "C:/Users/Benoit Couraud/OneDrive - Université Nice Sophia Antipolis/projet/Greenmov/Activity 3/traffic_forecasting/Final_Model_2023_08_21:/usr/src/apptraffic"
+        ports:
+         - 8911:8000
+        restart: always
+
+
+#networks:
+#  default:
+#    external:
+#      name: networkdefault
+
+# volumes:
+#     dbdata:
+#     grafana-storage:
+#  - "/home/imredd-tip/services/trafficforecasting/DockerFolder:/usr/src/appnoise"
