@@ -1,3 +1,5 @@
+Service from Greenmov project to forecast traffic intensity using NGSI-LD Smart Data Models
+
 To deploy the service:
 DOwnload the files: wget -O Dockerfiletraffic.zip 'https://unice-my.sharepoint.com/:u:/g/personal/benoit_couraud_unice_fr/EZgy3MsEZ7VPiFt0fXliU9YBj-NVqRaaieFuRByn2F2qBA?download=1' unzip Dockerfiletraffic.zip #move into the unzipped folder: cd DockerFolder #then, in "docker-compose.yml", change the PATH to the path of the location of the current unzipped folder. volumes: - "C:/Users/Benoit Couraud/OneDrive - Université Nice Sophia Antipolis/projet/Greenmov/Activity 3/trafficForecasting/DeploymentDocker/DockerFolder:/usr/src/apptraffic" Indeed, in the docker-compose.yml, You should change the path of the volumes to match your own directory: replace "C:/Users/Benoit Couraud/OneDrive - Université Nice Sophia Antipolis/projet/Greenmov/Activity 3/trafficForecasting/Final_2023_08_21/DockerFolder" with the path to your directory:
 
